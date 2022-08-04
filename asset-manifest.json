@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Quote-Machine-Project/static/css/main.9ae8a284.css",
+    "main.js": "/Quote-Machine-Project/static/js/main.a759a84d.js",
+    "index.html": "/Quote-Machine-Project/index.html",
+    "main.9ae8a284.css.map": "/Quote-Machine-Project/static/css/main.9ae8a284.css.map",
+    "main.a759a84d.js.map": "/Quote-Machine-Project/static/js/main.a759a84d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ae8a284.css",
+    "static/js/main.a759a84d.js"
+  ]
+}
