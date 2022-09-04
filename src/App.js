@@ -4,11 +4,10 @@ import axios from 'axios';
 
 function App() {
   const [data , setData] =  useState([])
-  const [start, setStart] = useState(false)
   const [color, setColor] = useState('#3d9970')
   const [quote, setQuote] = useState({
-    text: '',
-    author: '-'
+    text: 'I have no special talent. I am only passionately curious.',
+    author: 'Albert Einstein'
   })
 
   const newColor = {backgroundColor: color, color: color}
@@ -22,10 +21,6 @@ function App() {
       setData(response.data);
     })
   },[])
-
-  function handleStart (){
-    setStart(prevStart => !prevStart)
-  }
 
   function getNewQuote() {
     const randomIndex = Math.floor(Math.random() * data.length)
@@ -41,12 +36,14 @@ function App() {
   }
 
   return (
-        <Quotes 
-          style={newColor}
-          quote={quote.text}
-          author={quote.author}
-          handleClick={getNewQuote}
+    <div id='wrapper'>
+      <Quotes 
+        style={newColor}
+        quote={quote.text}
+        author={quote.author}
+        handleClick={getNewQuote}
         />
+    </div>
   )
 }
 export default App;

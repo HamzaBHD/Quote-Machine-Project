@@ -1,14 +1,38 @@
-body {
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+
+body {
+  background-color: #333;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center; 
+  margin: auto;
+}
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: currentColor;
+  color: currentColor;
 }
 
 #quote-box{
-  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   background: currentColor;
   color: currentColor;
   opacity: 0;
@@ -20,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   padding: 40px;
   border-radius: 3px;
 }
@@ -62,11 +86,14 @@ body {
 .buttons {
   width: 100%; 
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
+  justify-content: center;
   justify-content: space-between;
 }
 
 #tweet-quote {
+  color: currentColor;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,9 +120,6 @@ body {
   cursor: pointer;
   user-select: none;
 }
-/* .container {
-  background-color: #9b59b6;
-} */
 
 .start--container {
   background-color: white;
